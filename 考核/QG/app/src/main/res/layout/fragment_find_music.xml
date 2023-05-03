@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FindMusicFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/find_music_by_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="6"
+            android:background="@drawable/edittext_focused"
+            android:hint="请输入歌名"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/find_music"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#D9BCBC"
+            android:contentDescription="1"
+            android:importantForAccessibility="yes"
+            android:src="@drawable/find_music" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史记录：  "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_record"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:text="清空"
+            android:textSize="18sp"
+            android:backgroundTint="#D9BCBC"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热搜列表：   "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hot_search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

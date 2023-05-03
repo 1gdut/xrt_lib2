@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9BCBC"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/signup_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_focused"
+        android:hint="请输入手机号码"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/sign_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittext_focused"
+        android:hint="请输入用户密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/finish_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_focused"
+        android:padding="15dp"
+        android:text="完 成"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+</LinearLayout>
